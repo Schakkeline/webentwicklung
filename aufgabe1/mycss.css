@@ -1,0 +1,140 @@
+body.fancy {
+  font-family: 'Open Sans', sans-serif;
+}
+body.fancy #page-header {
+  background-color: #ff9400;
+  margin-top: 0;
+  padding: 20px 20px 20px 40px;
+  font-family: 'Lobster', cursive;
+}
+
+body.fancy #page-header h1 {
+  color: #ffffff;
+}
+
+body.fancy #about-me,
+body.fancy #i-like,
+body.fancy #blockquote,
+body.fancy #family,
+body.fancy #contact,
+body.fancy #css {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 80px;
+}
+
+body.fancy #about-me h2,
+body.fancy #blockquote h3,
+body.fancy #family h3,
+body.fancy #contact h3 {
+  font-family: 'Lobster', cursive;
+}
+
+body.fancy #about-me p {
+  min-height: 150px;
+  vertical-align: middle;
+  margin-left: 200px;
+  margin-right: 200px;
+  overflow:auto;
+  display:block;
+
+}
+body.fancy #about-me img {
+  width:150px;
+  height: 150px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+  clear:both;
+}
+
+body.fancy #blockquote blockquote{
+  background: #f9f9f9;
+  border-left: 10px solid #ff9400;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+body.fancy #blockquote blockquote:before {
+  color: #ff9400;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+body.fancy #blockquote blockquote p {
+  display: inline;
+}
+
+body.fancy #blockquote a,
+body.fancy #contact a {
+  color: #ff9400;
+  text-decoration: none;
+}
+
+body.fancy #blockquote a:hover,
+body.fancy #contact a:hover {
+  text-decoration: underline;
+}
+
+body.fancy #family table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+body.fancy #family table td,
+body.fancy #family table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+body.fancy #family table tr:nth-child(even){
+  background-color: #f9f9f9;
+}
+
+body.fancy #family table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff9400;
+  color: white;
+}
+
+body.fancy #contact input[type=text],
+body.fancy #contact textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+body.fancy #contact input[type=submit],
+body.fancy #css button {
+  width: 30%;
+  background-color: #ff9400;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body.fancy #contact input[type=submit]:hover,
+body.fancy #css button:hover {
+  background-color: #ffa500;
+}
+
+body.fancy footer {
+  background-color: #ff9400;
+}
+
+body.fancy footer div{
+  color: white;
+  padding: 20px 20px 20px 40px;
+}
