@@ -4,68 +4,106 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello world</title>
+    <link rel="shortcut icon" href="img/jb-icon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
   </head>
-  <body>
+  <body id="make-it-fancy">
 
-    <h1>My Website</h1>
-    <h2>About me</h2>
-    <img src="img/shana.JPG" alt="Shana">
-    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-    <p>Ich mag:</p>
-    <ul>
-      <li>kochen</li>
-      <li>tanzen</li>
-      <li>zeichnen</li>
-      <li>laut und falsch singen</li>
-    </ul>
+    <!-- Header -->
+    <div id="page-header">
+      <h1>My Website</h1>
+    </div>
+    <!-- /Header -->
 
-    <h3>Mein Motto:</h3>
-    <blockquote>Das Leben ist kein Schlotzer</blockquote>
+    <!-- Ueber mich -->
+    <div id="about-me">
+      <h2>About me</h2>
+      <img src="img/shana.JPG" alt="Shana">
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!-- /Ueber mich -->
 
-    <p>Besuche mich auf <a href="https://www.instagram.com/schakkeschakkeline/?hl=de" target="_blank">instagram</a></p>
+    <!-- Was ich mag -->
+    <div id="i-like">
+      <p>Ich mag:</p>
+      <ul>
+        <li>kochen</li>
+        <li>tanzen</li>
+        <li>zeichnen</li>
+        <li>laut und falsch singen</li>
+      </ul>
+    </div>
+    <!-- /Was ich mag -->
+
+    <!-- Zitat -->
+    <div id="blockquote">
+      <h3>Mein Motto:</h3>
+      <blockquote><p>Das Leben ist kein Schlotzer</p></blockquote>
+      <p>Besuche mich auf <a href="https://www.instagram.com/schakkeschakkeline/?hl=de" target="_blank">instagram</a></p>
+    </div>
+    <!-- /Zitat -->
 
     <!-- Familien Tabelle -->
-    <h3>Familie</h3>
-    <table border="1">
-      <thead>
+    <div id="family">
+      <h3>Familie</h3>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Vorname</th>
+            <th>Nachname</th>
+            <th>Alter</th>
+          </tr>
+        </thead>
         <tr>
-          <th>Vorname</th>
-          <th>Nachname</th>
-          <th>Alter</th>
+          <td>Uschi</td>
+          <td>Jegler</td>
+          <td>53</td>
         </tr>
-      </thead>
-      <tr>
-        <td>Uschi</td>
-        <td>Jegler</td>
-        <td>53</td>
-      </tr>
-      <tr>
-        <td>Ralf</td>
-        <td>Jegler</td>
-        <td>53</td>
-      </tr>
-      <tr>
-        <td>Nadja</td>
-        <td>Buchmaier</td>
-        <td>24</td>
-      </tr>
-    </table>
+        <tr>
+          <td>Ralf</td>
+          <td>Jegler</td>
+          <td>53</td>
+        </tr>
+        <tr>
+          <td>Nadja</td>
+          <td>Buchmaier</td>
+          <td>24</td>
+        </tr>
+      </table>
+    </div>
     <!-- /Familien Tabelle -->
 
     <!-- Kontaktdaten -->
-    <h3>Schreib mir:</h3>
-    <form action="">
-      <label for="name">Name</label><br>
-      <input type="text" id="name" name="name" placeholder="Dein Name.."><br><br>
+    <div id="contact">
+      <h3>Schreib mir:</h3>
+      <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name" name="name" placeholder="Dein Name.."><br><br>
 
-      <label for="subject">Nachricht</label><br>
-      <textarea id="subject" name="subject" placeholder="Schreibe mir etwas.."></textarea><br><br>
+        <label for="subject">Nachricht</label><br>
+        <textarea id="subject" name="subject" placeholder="Schreibe mir etwas.."></textarea><br><br>
 
-      <input type="submit" value="Senden">
-    </form>
+        <input type="submit" value="Senden">
+      </form>
 
-    <p>Oder schreibe mir direkt eine E-Mail an <a href="mailto:foo@foobar.com">foo@foobar.com</a></p>
-    <!-- Kontaktdaten -->
+      <p><small>Oder schreibe mir direkt eine E-Mail an <a href="mailto:foo@foobar.com">foo@foobar.com</a></small></p>
+    </div>
+    <!-- /Kontaktdaten -->
+
+    <!-- Easteregg -->
+    <div id="css">
+      <button type="button" id="change-css" onclick="myFunction()">CSS hinzufügen</button>
+    </div>
+    <!-- /Easteregg -->
+
+    <!-- Footer -->
+    <footer>
+      <div><small>Jacqueline Buchmaier | &copy; WS17/18 | Hochschule Ravensburg-Weingarten | Webentwicklung1</small></div>
+    </footer>
+    <!-- /Footer -->
+
+    <script type="text/javascript" src="myjs.js"></script>
 
   </body>
 </html>
