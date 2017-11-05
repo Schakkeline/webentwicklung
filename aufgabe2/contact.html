@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello world</title>
+  <link rel="shortcut icon" href="img/jb-icon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="mycss.css">
+</head>
+<body>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About me</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html" class="active">Contact</a>
+  </div>
+
+  <div id="main">
+    <!-- Header -->
+    <div class="page-header">
+      <h1><span id="openNav" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>Contact</h1>
+    </div>
+    <!-- /Header -->
+
+    <div class="content">
+
+      <!-- Kontaktdaten -->
+      <div id="contact">
+        <h3>Schreib mir:</h3>
+        <form action="">
+          <label for="name">Name</label><br>
+          <input type="text" id="name" name="name" placeholder="Dein Name.."><br><br>
+
+          <label for="subject">Nachricht</label><br>
+          <textarea id="subject" name="subject" placeholder="Schreibe mir etwas.."></textarea><br><br>
+
+          <input type="submit" value="Senden">
+        </form>
+
+        <p><small>Oder schreibe mir direkt eine E-Mail an <a href="mailto:foo@foobar.com">foo@foobar.com</a></small></p>
+      </div>
+      <!-- /Kontaktdaten -->
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div><small>Jacqueline Buchmaier | &copy; WS17/18 | Hochschule Ravensburg-Weingarten | Webentwicklung1</small></div>
+    </footer>
+
+    <!-- /Footer -->
+  </div>
+
+
+  <script type="text/javascript" src="myjs.js"></script>
+
+</body>
+</html>
