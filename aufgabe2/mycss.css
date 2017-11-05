@@ -9,6 +9,10 @@
   display: none;
 }
 
+.print-nav {
+  display: none;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -251,4 +255,67 @@ footer div{
 
 .cf:after {
   clear: both;
+}
+
+/*
+*
+* This is for print
+*
+* */
+
+@media print {
+  #mySidenav {
+    display: none;
+  }
+
+  .print-nav {
+    display: inline;
+  }
+
+  #main{
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  section {
+    page-break-after:always;
+  }
+
+  #contact {
+    page-break-after: avoid;
+  }
+
+  #family {
+    page-break-before: always;
+  }
+
+  .about-me p {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .img-circle {
+    float: none;
+  }
+
+  .gallery {
+    box-shadow: none;
+  }
+
+  a[href]::after {
+    content: " <"attr(href)">";
+    color: #888;
+    background-color: inherit;
+    font-style: italic;
+    size: 80%;
+  }
+
+  section[id]::before {
+    content:" [#"attr(id)"]";
+    color: #888;
+    background-color: inherit;
+    font-style: italic;
+    size: 80%;
+  }
 }
