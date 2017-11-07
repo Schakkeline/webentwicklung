@@ -1,0 +1,60 @@
+body, html {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  background: tomato;
+  margin-top:40px;
+}
+
+.footer {
+  background: lightgreen;
+}
+
+.main {
+  text-align: left;
+  background: deepskyblue;
+}
+
+.fixed-top {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: gold;
+}
+
+.fixed-side {
+  position: relative;
+}
+
+
+@media all and (min-width: 600px) {
+  .nav {
+    flex: 1 auto;
+    }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px;}
+  .nav {order: 1;background-color: grey;   position: relative;}
+  .fixed-side {position: fixed;}
+  .main    { order: 2; }
+  .footer  { order: 3; }
+  .header {margin-top:0px;}
+}
