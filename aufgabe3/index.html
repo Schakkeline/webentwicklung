@@ -11,16 +11,18 @@
 <body>
 
   <div class="wrapper">
-    <header class="header"><h1>My Website</h1></header>
+    <section id="home" data-anchor="home" class="header">
+      <h1>My Website</h1>
+    </section>
     <nav class="nav fixed-top sidenav">
       <div class="fixed-side">
         <a href="#" data-scroll="home">Home</a>
         <a href="#" data-scroll="about">About me</a>
-        <a href="#" data-scroll="projects">Projects</a>
+        <a href="#" data-scroll="animate">Animate</a>
       </div>
     </nav>
     <div class="main" style="min-height:1000px;">
-      <section id="home" data-anchor="home" class="flex-container-1">
+      <section class="flex-container-1">
         <img src="https://loremflickr.com/150/150" class="flex-item-1" alt="Random image"/>
         <img src="https://loremflickr.com/150/150" class="flex-item-1" alt="Random image"/>
         <img src="https://loremflickr.com/150/150" class="flex-item-1" alt="Random image"/>
@@ -104,6 +106,15 @@
             </p>
       </section>
 
+      <hr>
+
+      <section id="animate" data-anchor="animate">
+        <h3>Animate</h3>
+        <img src="img/jb-icon.png" class="rotate"/>
+        <img src="img/jb-icon.png" class="move-left" />
+        <img src="img/jb-icon.png" class="scale" />
+      </section>
+
     </div>
 
 
@@ -115,6 +126,7 @@
   </div>
 
   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+  <script src="myjs.js" type="text/javascript"></script>
 
 </body>
 </html>
